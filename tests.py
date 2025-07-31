@@ -100,6 +100,20 @@ class TestBooksCollector:
         # Проверяем, что книга попала в список детских
         assert name in collector.get_books_for_children()
 
+
+    def test_add_book_in_favorites_new_book_added(self):
+        collector = BooksCollector()
+
+        # Добавляем книгу
+        collector.add_new_book('Гарри Поттер')
+
+        # Добавляем книгу в избранное дважды
+        collector.add_book_in_favorites('Гарри Поттер')
+
+        # Проверяем, что книга в списке избранных
+        favorites = collector.get_list_of_favorites_books()
+        assert 'Гарри Поттер' in favorites
+
         
     def test_add_book_in_favorites_book_already_in_favorites_not_added(self):
         collector = BooksCollector()

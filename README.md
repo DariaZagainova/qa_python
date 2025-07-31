@@ -34,9 +34,10 @@
 4. **_test_get_books_with_specific_genre_fantasy_return_all_matching_books_** - метод *get_books_with_specific_genre*, выводятся все добавленные книги в жанре фантастики.
 5. **_test_get_books_genre_new_collector_returns_empty_dict_** - метод *get_books_genre* возвращает пустой словарь для нового объекта.
 6. **_test_get_books_for_children_books_with_allowed_genres_in_list_** - метод *get_books_for_children*, если книга не принадлежит к жанру из возрастных ограничений, то она включается в список, возвращаемый методом.
-7. **_test_add_book_in_favorites_book_already_in_favorites_not_added_** - метод *add_book_in_favorites*, книга повторно не добавляется, если она уже есть в списке избранных.
-8. **_test_delete_book_from_favorites_book_in_favorites_book_removed_** - метод *delete_book_from_favorites_books*, книга удаляется из списка избранных.
-9. **_test_get_list_of_favorites_returns_all_favorite_books_** - метод *get_list_of_favorites* выводит список с избранными книгами.
+7. **_test_add_book_in_favorites_new_book_added_** - метод *add_book_in_favorites*, новая книга добавляется в список избранных.
+8. **_test_add_book_in_favorites_book_already_in_favorites_not_added_** - метод *add_book_in_favorites*, книга повторно не добавляется, если она уже есть в списке избранных.
+9. **_test_delete_book_from_favorites_book_in_favorites_book_removed_** - метод *delete_book_from_favorites_books*, книга удаляется из списка избранных.
+10. **_test_get_list_of_favorites_returns_all_favorite_books_** - метод *get_list_of_favorites* выводит список с избранными книгами.
 
 #### Перед запуском тестов установить необходимые библиотеки:
 pip install pytest pytest-cov
